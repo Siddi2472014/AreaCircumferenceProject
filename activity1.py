@@ -1,5 +1,5 @@
 #Creating the class
-class area_circumference:
+class Circle:
   #Putting a variable 'radius' in the class
   def __init__(self, radius):
     self.radius = radius
@@ -14,7 +14,7 @@ radius = int(input("Enter the radius of the circle (INTEGERS ONLY!!) : "))
 #Asking user if they wanna find area or circumference
 choice = input("Do you want to find the area or circumference of the circle? (Type 'area' or 'circumference' P.S. Pi is taken as 3.14 only) : ")
 #Making an object for the class 
-circle = area_circumference(radius)
+circle = Circle(radius)
 #Using if and else to print the final statement
 if choice == "area":
    print("The area of the circle is", circle.area())
